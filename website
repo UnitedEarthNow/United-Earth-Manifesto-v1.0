@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United Earth Manifesto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #e63946;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 1rem 0;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #c71f2d;
+    }
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>United Earth</h1>
+    <p>A Manifesto for Global Unity and Justice</p>
+  </header>
+
+  <div class="container">
+    <h2>Why This Matters</h2>
+    <p>
+      The world is divided by borders, inequality, and systems of oppression. 
+      United Earth envisions a future where humanity stands as one, 
+      guided by fairness, solidarity, and shared responsibility. 
+    </p>
+
+    <a href="https://github.com/UnitedEarthNow/United-Earth-Manifesto-v1.0/blob/01b779e28348845523e21192cf7e823960690b20/United%20Earth%20Manifesto%20v1.0.pdf" class="btn">📄 Read the Manifesto</a>
+
+    <h2>About</h2>
+    <p>
+      This manifesto is a call to rethink the international system, 
+      build stronger global justice, and give voice to those left behind. 
+      It is the first step in a collective journey toward a freer and fairer world.
+    </p>
+
+    <h2>Join Us</h2>
+    <p>
+      Discussion and action begin here. Share your thoughts, ideas, and solidarity.
+    </p>
+    <a href="https://www.reddit.com/user/UnitedEarthNow/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="btn">🌍 Join the Discussion</a>
+  </div>
+
+  <footer>
+    <p>Licensed under CC BY-SA 4.0 | <a href="https://github.com/UnitedEarthNow/United-Earth-Manifesto-v1.0" style="color:#fff;">GitHub Repository</a></p>
+  </footer>
+</body>
+</html>
