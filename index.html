@@ -15,16 +15,22 @@
     header {
       background: #111;
       color: #fff;
-      padding: 2rem;
       text-align: center;
+    }
+    header img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      display: block;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+      padding-top: 1rem;
     }
     header p {
       font-size: 1.2rem;
-      margin-top: 0.5rem;
+      margin: 0.5rem 0 1rem 0;
     }
     .container {
       max-width: 900px;
@@ -44,6 +50,17 @@
     .btn:hover {
       background: #c71f2d;
     }
+    .note {
+      background: #fff;
+      padding: 1.5rem;
+      border-left: 6px solid #003399;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+    .note h2 {
+      margin-top: 0;
+      color: #003399;
+    }
     footer {
       background: #111;
       color: #aaa;
@@ -51,10 +68,15 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+    footer a {
+      color: #fff;
+    }
   </style>
 </head>
 <body>
   <header>
+    <!-- Flag image header -->
+    <img src="Flag_20x30.jpg" alt="United Earth Flag">
     <h1>United Earth</h1>
     <p>A Manifesto for Global Unity and Justice</p>
   </header>
@@ -69,6 +91,20 @@
 
     <a href="https://github.com/UnitedEarthNow/United-Earth-Manifesto-v1.0/blob/01b779e28348845523e21192cf7e823960690b20/United%20Earth%20Manifesto%20v1.0.pdf" class="btn">📄 Read the Manifesto</a>
 
+    <!-- Personal Note Section -->
+    <div class="note">
+      <h2>A Personal Note</h2>
+      <p>I wrote this manifesto with the hope of reaching others who share the vision of a united humanity — where freedom is not a privilege but law, where justice is not selective but universal, and where prosperity does not feed the rich but feeds life itself.</p>
+
+      <p>The core values and points are here, but the manifesto is far from complete — and that is exactly how it should be. No matter how perfect my words could be, they would mean little if I were the only one writing them. This manifesto is meant to represent humankind and its voice for freedom and justice. That is why I made this document open source — so we can discuss, rewrite, and refine it together, united as grassroots movements and activists from every corner of the world.</p>
+
+      <p>Remember your potential: you are more than what they make you believe. You can change this world — and manage it far better than the so-called “leaders” who hold power today. Know that you can break the chains your tyrants place upon you. Know that you can stop the ongoing genocide in Palestine and countless other places across the globe. Know that you can bring a tomorrow where every child has food and a roof over their head. Know that you can end patriarchy and free all women from its claws.</p>
+
+      <p><strong>Know that United Earth is not a distant utopia — it is a reality that grows closer with every one of you who dares to unite. From every corner of the world, we can bring it into being.</strong></p>
+
+      <p>— Onur Elmas</p>
+    </div>
+
     <h2>About</h2>
     <p>
       This manifesto is a call to rethink the international system, 
@@ -81,10 +117,16 @@
       Discussion and action begin here. Share your thoughts, ideas, and solidarity.
     </p>
     <a href="https://www.reddit.com/user/UnitedEarthNow/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="btn">🌍 Join the Discussion</a>
+
+    <!-- Placeholder for future application form -->
+    <p style="text-align:center;">
+      <a href="#" class="btn">✍️ Join Us (Coming Soon)</a>
+    </p>
   </div>
 
   <footer>
-    <p>Licensed under CC BY-SA 4.0 | <a href="https://github.com/UnitedEarthNow/United-Earth-Manifesto-v1.0" style="color:#fff;">GitHub Repository</a></p>
+    <p>Licensed under CC BY-SA 4.0 | <a href="https://github.com/UnitedEarthNow/United-Earth-Manifesto-v1.0">GitHub Repository</a></p>
   </footer>
 </body>
 </html>
+
