@@ -3,120 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join United Earth</title>
+  <title>🌍 United Earth — Membership Application</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
     }
-    .container {
-      width: 80%;
-      max-width: 800px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h1 {
+    header {
+      background: #111;
+      color: #fff;
       text-align: center;
-      color: #333;
+      padding: 1rem;
+    }
+    header img {
+      max-width: 150px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    form {
+      max-width: 900px;
+      background: #fff;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #e63946;
     }
     label {
       font-weight: bold;
       display: block;
-      margin-top: 15px;
+      margin-top: 1rem;
     }
     input, textarea, select {
       width: 100%;
-      padding: 10px;
-      margin-top: 5px;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-size: 1rem;
+    }
+    textarea {
+      min-height: 100px;
+    }
+    .checkbox-group, .radio-group {
+      margin-top: 0.5rem;
+    }
+    .checkbox-group label, .radio-group label {
+      font-weight: normal;
+      display: block;
     }
     button {
-      margin-top: 20px;
-      padding: 12px 20px;
-      background-color: #0055a5;
-      color: white;
+      margin-top: 2rem;
+      background: #e63946;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: bold;
     }
     button:hover {
-      background-color: #003f7a;
+      background: #c71f2d;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Join United Earth</h1>
-    <form action="submit_application.php" method="post">
+  <header>
+    <img src="Flag_20x30.jpg" alt="United Earth Flag">
+    <h1>🌍 United Earth — Membership Application</h1>
+  </header>
 
-      <label for="name">1. Full Name *</label>
-      <input type="text" id="name" name="name" required>
+  <form action="confirmation.html" method="post">
+    <!-- A) Identity & Contact -->
+    <h2>A) Identity & Contact</h2>
+    <label>Full name (or preferred name) — required
+      <input type="text" name="name" required>
+    </label>
+    <label>Email (or secure contact) — required
+      <input type="text" name="email" required>
+    </label>
+    <label>Country/Region — required
+      <input type="text" name="country" required>
+    </label>
+    <label>City (optional)
+      <input type="text" name="city">
+    </label>
+    <label>Time zone (optional)
+      <input type="text" name="timezone">
+    </label>
+    <label>Age — required (must be 18+)
+      <input type="number" name="age" min="18" required>
+    </label>
+    <label>Languages spoken — required
+      <input type="text" name="languages" required>
+    </label>
 
-      <label for="age">2. Age (must be 18+) *</label>
-      <input type="number" id="age" name="age" min="18" required>
+    <!-- B) Motivation & Values -->
+    <h2>B) Motivation & Values</h2>
+    <label>Why do you want to join United Earth? — required
+      <textarea name="motivation" required></textarea>
+    </label>
 
-      <label for="location">3. Country & City *</label>
-      <input type="text" id="location" name="location" required>
+    <p>Which issues do you feel most strongly about?</p>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="issues" value="Global justice"> Global justice & equality</label>
+      <label><input type="checkbox" name="issues" value="Climate justice"> Climate justice & environmental protection</label>
+      <label><input type="checkbox" name="issues" value="Workers"> Workers’ rights & economic fairness</label>
+      <label><input type="checkbox" name="issues" value="Feminism"> Feminism & gender equality</label>
+      <label><input type="checkbox" name="issues" value="LGBTQ"> LGBTQ+ liberation</label>
+      <label><input type="checkbox" name="issues" value="Anti-racism"> Anti-racism & anti-colonial struggle</label>
+      <label><input type="checkbox" name="issues" value="Peace"> Peace / anti-war / disarmament</label>
+      <label><input type="checkbox" name="issues" value="Intl law"> International law & global governance reform</label>
+      <label><input type="checkbox" name="issues" value="Tech"> Technology, science & future of humanity</label>
+      <label><input type="checkbox" name="issues" value="Community care"> Community care / solidarity networks</label>
+      <label><input type="checkbox" name="issues" value="Arts"> Arts, culture & communication for activism</label>
+      <label><input type="checkbox" name="issues" value="Other"> Other: <input type="text" name="issues_other"></label>
+    </div>
 
-      <label for="email">4. Email *</label>
-      <input type="email" id="email" name="email" required>
+    <label>In your own words, what does a just and unified world mean to you? — required
+      <textarea name="vision" required></textarea>
+    </label>
+    <label>How do you see the role of international law in achieving justice?
+      <textarea name="intlLaw"></textarea>
+    </label>
+    <label>What do you believe are the biggest obstacles to global unity today? — required
+      <textarea name="obstacles" required></textarea>
+    </label>
+    <label>How do you approach disagreements within a movement? — required
+      <textarea name="disagreements" required></textarea>
+    </label>
 
-      <label for="background">5. Background (education, profession, or other relevant experience)</label>
-      <textarea id="background" name="background"></textarea>
+    <!-- C) Skills & Contribution -->
+    <h2>C) Skills, Experience & Contribution</h2>
+    <label>Relevant skills or background
+      <textarea name="skills"></textarea>
+    </label>
+    <p>What skills/tools can you bring?</p>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="tools" value="Writing"> Writing & editing</label>
+      <label><input type="checkbox" name="tools" value="Research"> Research & data analysis</label>
+      <label><input type="checkbox" name="tools" value="Public speaking"> Public speaking</label>
+      <label><input type="checkbox" name="tools" value="Media"> Visual media</label>
+      <label><input type="checkbox" name="tools" value="Tech"> Programming / digital security</label>
+      <label><input type="checkbox" name="tools" value="Translation"> Translation</label>
+      <label><input type="checkbox" name="tools" value="Events"> Organizing events</label>
+      <label><input type="checkbox" name="tools" value="Fundraising"> Fundraising & outreach</label>
+      <label><input type="checkbox" name="tools" value="Legal"> Legal / policy knowledge</label>
+      <label><input type="checkbox" name="tools" value="Management"> Project management</label>
+      <label><input type="checkbox" name="tools" value="Community"> Community organizing</label>
+      <label><input type="checkbox" name="tools" value="Other"> Other: <input type="text" name="tools_other"></label>
+    </div>
 
-      <label for="skills">6. Which of these areas can you contribute to? (check all that apply)</label>
-      <select id="skills" name="skills[]" multiple>
-        <option value="writing">Writing & Research</option>
-        <option value="translation">Translation</option>
-        <option value="tech">Tech / Web Development</option>
-        <option value="media">Social Media & Outreach</option>
-        <option value="organizing">Activism & Organizing</option>
-        <option value="art">Art & Design</option>
-        <option value="fundraising">Fundraising</option>
-        <option value="other">Other</option>
+    <p>Prior experience in activism/advocacy?</p>
+    <div class="radio-group">
+      <label><input type="radio" name="experience" value="Yes"> Yes (describe below)</label>
+      <textarea name="experience_details"></textarea>
+      <label><input type="radio" name="experience" value="No"> No, but eager to learn</label>
+    </div>
+
+    <p>Are you part of any activist groups?</p>
+    <div class="radio-group">
+      <label><input type="radio" name="groups" value="Yes"> Yes (please specify)</label>
+      <textarea name="groups_details"></textarea>
+      <label><input type="radio" name="groups" value="No"> No</label>
+    </div>
+
+    <!-- D) Availability & Style -->
+    <h2>D) Availability & Working Style</h2>
+    <label>Time you can dedicate per week:
+      <select name="time">
+        <option><2 hours</option>
+        <option>2–5 hours</option>
+        <option>5–10 hours</option>
+        <option>10+ hours</option>
       </select>
-
-      <label for="availability">7. How much time can you dedicate weekly? *</label>
-      <select id="availability" name="availability" required>
-        <option value="1-3">1–3 hours</option>
-        <option value="4-7">4–7 hours</option>
-        <option value="8-15">8–15 hours</option>
-        <option value="16+">16+ hours</option>
+    </label>
+    <label>Willing to join online meetings?
+      <select name="meetings">
+        <option>Yes</option>
+        <option>No</option>
+        <option>Occasionally</option>
       </select>
-
-      <label for="experience">8. Do you have any experience in activism, organizing, or community work?</label>
-      <textarea id="experience" name="experience"></textarea>
-
-      <label for="languages">9. Which languages do you speak? *</label>
-      <input type="text" id="languages" name="languages" required>
-
-      <label for="vision">10. What does a just and unified world mean to you? *</label>
-      <textarea id="vision" name="vision" required></textarea>
-
-      <label for="issues">11. Which global issues matter most to you? *</label>
-      <textarea id="issues" name="issues" required></textarea>
-
-      <label for="motivation">12. Why do you want to join United Earth? *</label>
-      <textarea id="motivation" name="motivation" required></textarea>
-
-      <label for="referred">13. Were you referred by someone? (optional)</label>
-      <input type="text" id="referred" name="referred">
-
-      <label for="updates">14. Would you like to receive updates and newsletters? *</label>
-      <select id="updates" name="updates" required>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
+    </label>
+    <label>Preferred working style:
+      <select name="style">
+        <option>Independently</option>
+        <option>Small groups</option>
+        <option>Larger teams</option>
+        <option>No strong preference</option>
       </select>
+    </label>
+    <label>Preferred participation mode:
+      <select name="mode">
+        <option>Public-facing</option>
+        <option>Background-supporting</option>
+        <option>Both</option>
+        <option>Depends on context</option>
+      </select>
+    </label>
+    <label>Preferred communication platform(s):
+      <input type="text" name="platforms">
+    </label>
 
-      <button type="submit">Submit Application</button>
-    </form>
-  </div>
+    <!-- E) Safety -->
+    <h2>E) Safety, Privacy & Credit</h2>
+    <label>Any safety considerations? (optional)
+      <textarea name="safety"></textarea>
+    </label>
+    <label><input type="checkbox" name="consent" required> I consent to United Earth storing my contact details.</label>
+    <label>Credit preference:
+      <select name="credit">
+        <option>Publicly credit my name</option>
+        <option>Credit alias only</option>
+        <option>No public credit</option>
+      </select>
+    </label>
+    <label><input type="checkbox" name="conduct" required> I agree to uphold non-violence, anti-discrimination, anti-harassment, and respectful dialogue.</label>
+
+    <!-- F) Principles -->
+    <h2>F) Principles</h2>
+    <label><input type="checkbox" name="principles" value="Justice"> Commitment to global justice, equality, and dignity.</label>
+    <label><input type="checkbox" name="principles" value="Oppression"> Opposition to oppression, racism, patriarchy, colonialism, authoritarianism.</label>
+    <label><input type="checkbox" name="principles" value="Democracy"> Support for democratic, collective decision-making.</label>
+    <label><input type="checkbox" name="principles" value="Law"> Belief that international law should protect people above power.</label>
+    <label><input type="checkbox" name="principles" value="Collaboration"> Willingness to collaborate across borders toward United Earth.</label>
+    <label><input type="checkbox" name="final" required> I affirm my vision respects human rights and rejects hate, violence against civilians, and discrimination.</label>
+
+    <!-- G) Final -->
+    <h2>G) Final</h2>
+    <label>Anything else you’d like us to know?
+      <textarea name="final_notes"></textarea>
+    </label>
+    <label>Signature & date — required
+      <input type="text" name="signature" required>
+    </label>
+
+    <button type="submit">Submit Application</button>
+  </form>
 </body>
 </html>
-
