@@ -1,6 +1,6 @@
 # United Earth Manifesto 🌍✊
 
-📄 **[Read the United Earth Manifesto (PDF)](https://github.com/UnitedEarthNow/United-Earth-Manifesto-v1.0/blob/01b779e28348845523e21192cf7e823960690b20/United%20Earth%20Manifesto%20v1.0.pdf)**
+📄 **[Read the United Earth Manifesto (PDF)](https://github.com/UnitedEarthNow/United-Earth-Manifesto-v1.0/blob/30ebe8a3ef5b24d848b6278b3af8e17926775dcf/United%20Earth%20Manifesto%20v1.0.pdf)**
 
 ---
 
